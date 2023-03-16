@@ -32,7 +32,7 @@ function Navbar() {
               </a>
             </ul>
             <a className="navbar-brand fs-4 fw-bolderv mx-auto" href="#">
-              Navbar
+              MERN-APP
             </a>
             <button className="btn btn-outline-primary ms-auto px-4 rounded-pill ">
               Login
