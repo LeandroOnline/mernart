@@ -1,45 +1,45 @@
+import { NavLink } from "react-router-dom";
+
 function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary shadow">
         <div className="container">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <NavLink className="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </NavLink>
               </li>
-              <a className="nav-link" href="#">
+              <NavLink className="nav-link" to="/about" href='#about'>
                 About
-              </a>
-              <a className="nav-link" href="#">
+              </NavLink>
+              <NavLink className="nav-link" to="/services">
                 Services
-              </a>
-              <a className="nav-link" href="#">
+              </NavLink>
+              <NavLink className="nav-link" to="/contact">
                 Contact
-              </a>
+              </NavLink>
             </ul>
-            <a className="navbar-brand fs-4 fw-bolderv mx-auto" href="#">
+            <NavLink
+              className="navbar-brand fs-4 fw-bolderv mx-auto"
+              to="/home"
+            >
               MERN-APP
-            </a>
-            <button className="btn btn-outline-primary ms-auto px-4 rounded-pill ">
+            </NavLink>
+            <NavLink
+              to="/login"
+              className="btn btn-outline-primary ms-auto px-4 rounded-pill "
+            >
               Login
-            </button>
-            <button className="btn btn-outline-primary mx-2 px-4 rounded-pill ">
+            </NavLink>
+            <NavLink
+              to="/register"
+              className="btn btn-outline-primary mx-2 px-4 rounded-pill "
+            >
               Register
-            </button>
+            </NavLink>
           </div>
         </div>
       </nav>

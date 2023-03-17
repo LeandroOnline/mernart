@@ -3,3 +3,18 @@
     background-color: rgb(255, 255, 255);
     height: 500px;
 }
+
+.card{
+    transition: all 0.5s ease;
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.footer{
+    background: linear-gradient(45deg, rgba(0, 0, 255, 0.471),rgba(159, 29, 29, 0.48));
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+}
