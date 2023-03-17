@@ -8,10 +8,10 @@ import About from "./components/About";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Register from "./components/Register";
 
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -23,7 +23,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/register" element={<Register />} /> */}
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </>
